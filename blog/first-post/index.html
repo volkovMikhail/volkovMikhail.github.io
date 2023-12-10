@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>This is my first post.</title>
-		<meta name="description" content="This is a post on My Blog about agile frameworks.">
+		<title>Первый пост!</title>
+		<meta name="description" content="Первый пост в моём блоге.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Михаил Волков">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Михаил Волков">
 
@@ -240,6 +240,12 @@ body {
 	max-width: 40em;
 }
 
+img{
+	width: 100%;
+	object-fit: contain;
+	height: fit-content;
+}
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
@@ -365,22 +371,11 @@ header {
 .postlist {
 	list-style: none;
 	padding: 0;
-	padding-left: 1.5rem;
 }
 .postlist-item {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: baseline;
-	counter-increment: start-from -1;
 	margin-bottom: 1em;
-}
-.postlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
 }
 .postlist-date,
 .postlist-item:before {
@@ -394,7 +389,6 @@ header {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: 0.25em;
 	padding-right: 0.5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
@@ -470,30 +464,42 @@ h2 + .header-anchor {
 
 		<main id="skip">
 			
-<h1>This is my first post.</h1>
+<h1>Первый пост!</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2018-05-01">01.05.2018</time></li>
-	<li><a href="/tags/another-tag/" class="post-tag">another tag</a></li>
+	<li><time datetime="2023-12-10">10.12.2023</time></li>
+	<li><a href="/tags/blog/" class="post-tag">Блог</a></li>
 </ul>
 
-<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-<h2 id="section-header" tabindex="-1">Section Header <a class="header-anchor" href="#section-header">#</a></h2>
-<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-<pre class="language-diff-js" tabindex="0"><code class="language-diff-js"><span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// this is a command</span>
-<span class="token prefix unchanged"> </span><span class="token keyword">function</span> <span class="token function">myCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="token inserted-sign inserted language-js"><span class="token prefix inserted">+</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-</span><span class="token deleted-sign deleted language-js"><span class="token prefix deleted">-</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-</span><span class="token unchanged language-js"><span class="token prefix unchanged"> </span>  counter<span class="token operator">++</span><span class="token punctuation">;</span>
-<span class="token prefix unchanged"> </span><span class="token punctuation">}</span>
-</span>
-<span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// Test with a line break above this line.</span>
-<span class="token prefix unchanged"> </span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span></code></pre>
+<p>Привет! Это первый пост в моём блоге.
+В этом посте расскажу о том что мне интересно сейчас,
+о чём я буду писать, и зачем мне этот блог.</p>
+<p><picture><source type="image/avif" srcset="/img/cwFl5mRpry-3024.avif 3024w"><source type="image/webp" srcset="/img/cwFl5mRpry-3024.webp 3024w"><img alt="Котик и я" loading="lazy" decoding="async" src="/img/cwFl5mRpry-3024.jpeg" width="3024" height="4032"></picture></p>
+<h2 id="chto-mne-interesno" tabindex="-1">Что мне интересно <a class="header-anchor" href="#chto-mne-interesno">#</a></h2>
+<p>В основном заинтересован в сфере разработки. На javascript и не только.
+Также интересуюсь фотографией, снимаю на мыльницы.
+Читаю интересны книги.
+По чуть-чуть учусь играть на пианино. Люблю разную музыку, фильмы. Иногда плету или вышиваю что-нибудь.
+Люблю разного вида активности: прогулки, волейбол, велоспорт, тренажёрный зал, бассейн.
+Ещё я создаю электронную музыку.
+Путешествую. Играю в игры. Люблю <a href="https://www.speedrun.com/users/volkovMikhail">проходить игры на скорость</a></p>
+<h2 id="o-chyom-etot-blog" tabindex="-1">О чём этот блог <a class="header-anchor" href="#o-chyom-etot-blog">#</a></h2>
+<p>В первую очередь этот блог обо мне. О том что меня интересует, о моих увлечениях и мыслях, о моём опыте, проблемах которые я решал в процессе разработки и о их решениях.
+Также тут я буду писать о своих сайд-проектах, которые я делаю.</p>
+<h2 id="dlya-chego-mne-blog" tabindex="-1">Для чего мне блог <a class="header-anchor" href="#dlya-chego-mne-blog">#</a></h2>
+<p>Чтобы поделится тем чем я занимаюсь.
+Улучшить навык написания текстов.
+Лучше понимать то что я делаю, через объяснение
+ты начинаешь лучше разбираться в теме на которую ты пишешь.
+Помочь кому-то у кого возникают такие же проблемы как у меня.</p>
+<p>Использовать этот блог как личное пространство в сети.
+Чтобы кто-то мог посмотреть чем я занимаюсь,
+узнать больше про меня и кто я такой через мои посты.</p>
+<p>В общем это всё что я хотел сказать,
+также можно ознакомиться с моими другими постами.</p>
+<p>Если интересуют отдельные темы, вверху поста есть ссылка на теги.</p>
+<p>Спасибо за внимание!</p>
 
-<ul class="links-nextprev"><li>Следующая: <a href="/blog/secondpost/">This is my second post with a much longer title.</a></li>
-</ul>
 <ul class="links-nextprev">
 	<li><a href="/about">&copy; 2023 Михаил Волков</a></li>
 </ul>
@@ -502,6 +508,6 @@ h2 + .header-anchor {
 
 		<footer></footer>
 
-		<!-- Current page: /blog/firstpost/ -->
+		<!-- Current page: /blog/first-post/ -->
 	</body>
 </html>

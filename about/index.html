@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Михаил Волков</title>
-		<meta name="description" content="Я пишу о бекенд разработке, опыте в карьере, интересных местах и о себе.">
+		<meta name="description" content="Я пишу о бэкенд разработке, опыте в карьере, интересных местах и о себе.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Михаил Волков">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Михаил Волков">
 
@@ -70,6 +70,12 @@ html {
 }
 body {
 	max-width: 40em;
+}
+
+img{
+	width: 100%;
+	object-fit: contain;
+	height: fit-content;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -197,22 +203,11 @@ header {
 .postlist {
 	list-style: none;
 	padding: 0;
-	padding-left: 1.5rem;
 }
 .postlist-item {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: baseline;
-	counter-increment: start-from -1;
 	margin-bottom: 1em;
-}
-.postlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
 }
 .postlist-date,
 .postlist-item:before {
@@ -226,7 +221,6 @@ header {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: 0.25em;
 	padding-right: 0.5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
@@ -303,6 +297,12 @@ h2 + .header-anchor {
 		<main id="skip">
 			<h1 id="obo-mne" tabindex="-1">Обо мне <a class="header-anchor" href="#obo-mne">#</a></h1>
 <p>Node.js бекенд разработчик из Минска</p>
+<p>Связь со мной:</p>
+<ul>
+<li><a href="mailto:volkov.work1@gmail.com">volkov.work1@gmail.com</a></li>
+<li><a href="https://www.instagram.com/volkov.mishaa/">instagram</a></li>
+<li><a href="https://www.linkedin.com/in/volkov-m/">linkedin</a></li>
+</ul>
 
 		</main>
 
